@@ -65,7 +65,7 @@ def delete_student(conn, id):
         print(e)
 
 
-database = r'group_24.db'
+database = r'group_24_24.db'
 
 sql_create_student_table = '''
 CREATE TABLE student(
@@ -81,9 +81,9 @@ is_married BOOLEAN DEFAULT FALSE
 connektion = create_connektion(database)
 if connektion is not None:
     print('всё работает')
-    create_table(connektion, sql_create_student_table)
+    # create_table(connektion, sql_create_student_table)
     # create_student(connektion,('Kamran',10,'swim','2006-08-20',True))
     rekud_students(connektion)
-    update_students_mark_is_married(connektion, 4, 100, False)
+    update_students_mark_is_married(connektion, 2, 100, False)
     delete_student(connektion, 3)
     rekud_students(connektion)
