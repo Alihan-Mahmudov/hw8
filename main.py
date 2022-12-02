@@ -1,5 +1,3 @@
-# SQl - Structured Query Language
-# CRUD-create,rekud,update,delete
 import sqlite3
 from sqlite3 import Error
 
