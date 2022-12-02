@@ -87,4 +87,3 @@ if connektion is not None:
     update_students_mark_is_married(connektion, 2, 100, False)
     delete_student(connektion, 3)
     rekud_students(connektion)
-print()
